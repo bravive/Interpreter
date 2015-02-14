@@ -1,0 +1,41 @@
+
+/*----------------------------   CUT HERE --------------------------------------*/
+
+/* This file test the line continuation of code */
+program
+de&                        /* divide decs into two lines*/
+cs [
+	integer n          /* iteration number */
+    integer m          
+    integer fact        /* the result */
+]	
+b&
+egin                     /* divide begin into two lines*/
+	print "En&
+ter n:"
+	input n
+	print n
+    print cr
+    print "Enter m:"
+    input m
+    print m
+    print cr
+    fact = 0
+
+    w&                       /* divide while into two lines*/
+hile ( n&
+:gt:0 )                      /* divide while condition into two lines*/
+    [
+        if ( m :gt: 0) then
+        [
+            fact = fact+1
+            m = m - 1
+        ]
+        else
+        [
+            fact = fact-1
+        ]
+        n = n - 1
+    ]
+    print fact
+end

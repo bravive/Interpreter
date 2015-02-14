@@ -1,0 +1,7 @@
+/*----------------------------   CUT HERE --------------------------------------*/
+/* ----------------- This will represent the easiest example ------------------- */
+/* Hello world */
+program
+begin
+	print "Hello world"
+end

@@ -1,0 +1,44 @@
+
+/*----------------------------   CUT HERE --------------------------------------*/
+/* ----------------- This will represent the most complicated example ------------------- */
+/* Factorial Calculator */
+program
+decs [
+	integer fact		/* factorial result 			*/
+	integer n		/* input factorial term		*/
+]	
+begin
+	print "Enter the factorial term:"
+	input n
+	print n
+	print "! = "
+	fact = n
+	factorial ( fact ) 
+	print fact
+end
+
+subroutine factorial ( fact )
+decs [
+	integer temp
+]
+
+begin
+	/* Safety check to make sure value is > 0 */
+	if ( fact :lt: 0 ) then
+	[
+		fact = fact * -1
+	]
+	
+	/* Set local value to temp and then use recursion to generate factorial */
+	temp = fact
+	if ( fact :eq: 0 ) then 
+	[
+		fact = 1
+	]
+	else
+	[
+		temp = n - 1
+		factorial ( temp )
+		n = n * temp
+	]
+return

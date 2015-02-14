@@ -1,0 +1,33 @@
+
+/*----------------------------   CUT HERE --------------------------------------*/
+/* This file test the nest of while */
+program
+decs [
+	integer n          /* outer iteration number */
+    integer m          /* inner iteration number */
+    integer mm         /* inner iteration number */
+    integer fact        /* the result */
+]	
+begin
+	print "Enter n:"
+	input n
+	print n
+    print cr
+    print "Enter m:"
+    input m
+    print m
+    print cr
+    fact = 0
+
+    while ( n :gt:0 )                 /* there is a "while" nested in a "while" */
+    [
+        mm = m
+        while ( mm :gt: 0)
+        [
+            fact = fact+1
+            mm = mm - 1
+        ]
+        n = n - 1
+    ]
+    print fact
+end

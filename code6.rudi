@@ -1,0 +1,41 @@
+
+/*----------------------------   CUT HERE --------------------------------------*/
+/* This file test the nest of if */
+program
+decs [
+	integer n
+    integer m
+]	
+begin
+	print "Enter n:"
+	input n
+	print n
+    print cr
+    print "Enter m:"
+    input m
+    print m
+    print cr
+
+    if ( n :lt: 0 ) then         /* there is a “if” nested in “if”  */
+    [
+        if ( m :lt: 0) then
+        [
+            print "n < 0, m < 0"
+        ]
+        else
+        [
+            print "n < 0, m > 0"
+        ]
+    ]
+    else
+    [
+        if ( m :lt: 0) then
+        [
+            print "n > 0, m < 0"
+        ]
+        else
+        [
+            print "n > 0, m > 0"
+        ]
+    ]
+end

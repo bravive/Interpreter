@@ -1,0 +1,41 @@
+
+/*----------------------------   CUT HERE --------------------------------------*/
+
+/* This file test the lines of comments */
+program
+de&
+cs [
+	integer n          /* outer iteration number */
+    integer m          /* inner iteration number */
+    integer fact        /* the result */
+]	
+begin
+	print "Enter n:"
+	input n
+	print n
+    print cr
+    print "Enter m:"
+    input m
+    print m
+    print cr
+    fact = 0
+    /*
+        print "I'm in the comments, you cannot see me, hahaha~"
+        print "I'm still in the comments"
+    */
+
+    while ( n:gt:0 )
+    [
+        if ( m :gt: 0) then
+        [
+            fact = fact+1
+            m = m - 1
+        ]
+        else
+        [
+            fact = fact-1
+        ]
+        n = n - 1
+    ]
+    print fact
+end

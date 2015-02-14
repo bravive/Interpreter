@@ -1,0 +1,15 @@
+
+/*----------------------------   CUT HERE --------------------------------------*/
+/* ----------------- This will represent the next easiest example ------------------- */
+/* Hello world */
+program
+decs [
+	string name
+]
+begin
+	print "Enter your name:"
+	input name
+	print "Hello"
+	print name
+end
+
